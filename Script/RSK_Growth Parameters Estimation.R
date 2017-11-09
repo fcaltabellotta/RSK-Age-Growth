@@ -92,10 +92,6 @@ legend("topright", c("(a)"),bty = "n", border = "white")
 ##############
 ### VBGM-3 ###
 ##############
-## DHO ... These first two lines are not needed. I commented them.
-#vbTyp <- function(Age,Linf,K,t0) Linf*(1-exp(-K*(Age-t0)))
-#vbTyp(3, Linf=620,K=0.2,t0=0)
-## DHO ... this ultimately works for createing the graphic, but note that you switched to using the typical rather than the original parameterization of the von B. Again, this will produce the exact same plot as if you had used the original parameterization, but the parameters will be different (i.e., you will estimate a t_0 here instead of an L_0). That feels "odd" to me given that you set the L_0 above. I did NOT change anything after this line.
 vbTyp <-vbFuns()
 vbTyp(3, Linf=620,K=0.2,t0=0)
 
